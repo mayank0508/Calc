@@ -11,8 +11,8 @@ body {
 }
 
 header {
-  background: #023d6d;
-  color: white;
+  background: #f3db01;
+  color: rgb(255, 145, 0);
   padding: 1rem;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
@@ -24,10 +24,10 @@ header {
   margin: 2rem auto;
   width: 40rem;
   max-width: 90%;
-  border: 1px solid #023d6d;
+  border: 1px solid #ff0000;
   border-radius: 10px;
   padding: 1rem;
-  color: #023d6d;
+  color: #ff9900;
 }
 
 #results {
@@ -37,12 +37,12 @@ header {
 #calculator input {
   font: inherit;
   font-size: 3rem;
-  border: 2px solid #023d6d;
+  border: 2px solid #ff7300;
   width: 10rem;
   padding: 0.15rem;
   margin: auto;
   display: block;
-  color: #023d6d;
+  color: #ff0000;
   text-align: center;
 }
 
@@ -52,9 +52,9 @@ header {
 
 #calculator button {
   font: inherit;
-  background: #023d6d;
+  background: #fc9700;
   color: white;
-  border: 1px solid #023d6d;
+  border: 1px solid #ffc400;
   padding: 1rem;
   cursor: pointer;
 }
@@ -65,8 +65,8 @@ header {
 
 #calculator button:hover,
 #calculator button:active {
-  background: #084f88;
-  border-color: #084f88;
+  background: #f3c705;
+  border-color: #eeff00;
 }
 
 #calc-actions button {
