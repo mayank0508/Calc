@@ -1,8 +1,8 @@
 const defaultResult = 0;
 let currrentResult = defaultResult;
 
- currrentResult = currrentResult+10;
+ currrentResult = (currrentResult+10) *3 /2 -4;
 
- let calculatedescription = "10"
+ let calculatedescription = `(currrentResult+10) *3 /2 -4`;
 
  outputResult(currrentResult, calculatedescription);
