@@ -1,4 +1,6 @@
-let currrentResult = 0;
+const defaultResult = 0;
+let currrentResult = defaultResult;
+
  currrentResult = currrentResult+10;
 
  let calculatedescription = "10"
