@@ -7,6 +7,7 @@ function add(num1, num2){
 }
 
 add(3, 5);
+add(4, 6);
 
  currrentResult = (currrentResult+10) *3 /2 -4;
 
