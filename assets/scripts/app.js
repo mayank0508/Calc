@@ -3,13 +3,12 @@ let currrentResult = defaultResult;
 
 function add(num1, num2){
     const result = num1+num2;
-    alert('The result is ' + result);
+    return result;
 }
 
-add(3, 5);
-add(4, 6);
+const additionResult = add(3, 5);
 
- currrentResult = (currrentResult+10) *3 /2 -4;
+ currrentResult = additionResult;
 
  let calculatedescription = `(${defaultResult}+10) * 3 / 2 - 4`;
  
