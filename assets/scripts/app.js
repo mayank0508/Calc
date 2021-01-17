@@ -6,6 +6,8 @@ function add(num1, num2){
     return result;
 }
 
+alert(result);
+
 currrentResult = add(5,5);
 
  let calculatedescription = `(${defaultResult}+10) * 3 / 2 - 4`;
