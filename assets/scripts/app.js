@@ -1,8 +1,8 @@
 const defaultResult = 0;
 let currrentResult;
 
-function add(num1, num2){
-    const result = num1+num2;
+function add(){
+    const result = currrentResult + userInput.value;
     return result;
 }
 
