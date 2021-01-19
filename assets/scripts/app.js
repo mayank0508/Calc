@@ -7,7 +7,7 @@ function add(num1, num2){
 }
 
 
-addBtn.addEventListener('click', add(1, 7));
+addBtn.addEventListener('click', add);
 
 
  outputResult(currrentResult, calculatedescription);
