@@ -3,7 +3,6 @@ let currrentResult;
 
 function add(){
     const result = currrentResult + userInput.value;
-    return result;
 }
 
 
