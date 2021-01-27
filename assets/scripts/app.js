@@ -2,7 +2,7 @@ const defaultResult = 0;
 let currrentResult = defaultResult;
 
 function add(){
-    currrentResult = currrentResult + userInput.value;
+    currrentResult = currrentResult + parseInt(userInput.value);
     outputResult(currrentResult, '');
 }
 
