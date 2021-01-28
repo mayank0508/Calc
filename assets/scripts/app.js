@@ -2,7 +2,7 @@ const defaultResult = 0;
 let currrentResult = defaultResult;
 
 function getUserInput() {
-    return enteredNumber;
+    return parseInt(userInput.value);
 }
 
 function operationResult(operator, startResult, endResult){
