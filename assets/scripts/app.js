@@ -6,35 +6,35 @@ function getUserInput() {
 }
 
 function operationResult(operator, startResult, endResult){
-    const calcDescription = `${startResult} ${operator} ${endResult}`
+    const calcDescription = `${startResult} ${operator} ${endResult}`;
     outputResult(currrentResult, calcDescription);
 }
 
 function add(){
-    const enteredNumber = getUserInput;
+    const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult + enteredNumber;; //Here you can not use ParseInt, you can also do
+    currrentResult = currrentResult + enteredNumber;//Here you can not use ParseInt, you can also do
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber)
 }
 
 function subt(){
-    const enteredNumber = getUserInput;
+    const enteredNumber = getUserInput();
     const initialResult = currrentResult;
     currrentResult = currrentResult - enteredNumber;
     operationResult('-', initialResult, enteredNumber)
 }
 
 function multi(){
-    const enteredNumber = getUserInput;
+    const enteredNumber = getUserInput();
     const initialResult = currrentResult;
     currrentResult = currrentResult - enteredNumber;
     operationResult('-', initialResult, enteredNumber)
 }
 
 function divide(){
-    const enteredNumber = getUserInput;
+    const enteredNumber = getUserInput();
     const initialResult = currrentResult;
     currrentResult = currrentResult - enteredNumber;
     operationResult('-', initialResult, enteredNumber)
