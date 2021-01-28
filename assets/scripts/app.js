@@ -29,15 +29,15 @@ function subt(){
 function multi(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult - enteredNumber;
-    operationResult('-', initialResult, enteredNumber)
+    currrentResult = currrentResult * enteredNumber;
+    operationResult('*', initialResult, enteredNumber)
 }
 
 function divide(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult - enteredNumber;
-    operationResult('-', initialResult, enteredNumber)
+    currrentResult = currrentResult / enteredNumber;
+    operationResult('/', initialResult, enteredNumber)
 }
 
 addBtn.addEventListener('click', add);
