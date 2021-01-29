@@ -20,7 +20,7 @@ function add(){
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
     logEntries.push(enteredNumber);
-    console.log(logEntries[0]);
+    console.log(logEntries);
 }
 
 function subt(){
