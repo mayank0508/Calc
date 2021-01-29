@@ -1,6 +1,7 @@
 const defaultResult = 0;
 let currrentResult = defaultResult;
-let logEntries; // We have not declared it as an array because dowm the line we will declare it as an array
+let logEntries = []; // We have not declared it as an array because dowm the line we will declare it as an array
+                     // But if we use push then we have reintialzed the array here.
 
 function getUserInput() {
     return parseInt(userInput.value);
