@@ -13,7 +13,7 @@ function operationResult(operator, startResult, endResult){
 function add(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult + enteredNumber;//Here you can not use ParseInt, you can also do
+    currrentResult += enteredNumber;//Here you can not use ParseInt, you can also do
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
@@ -22,21 +22,21 @@ function add(){
 function subt(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult - enteredNumber;
+    currrentResult -= enteredNumber;
     operationResult('-', initialResult, enteredNumber);
 }
 
 function multi(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult * enteredNumber;
+    currrentResult *= enteredNumber;
     operationResult('*', initialResult, enteredNumber);
 }
 
 function divide(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
-    currrentResult = currrentResult / enteredNumber;
+    currrentResult /= enteredNumber;
     operationResult('/', initialResult, enteredNumber);
 }
 
