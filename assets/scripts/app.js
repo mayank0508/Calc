@@ -1,5 +1,6 @@
 const defaultResult = 0;
 let currrentResult = defaultResult;
+let logEntries; // We have not declared it as an array because dowm the line we will declare it as an array
 
 function getUserInput() {
     return parseInt(userInput.value);
@@ -17,6 +18,8 @@ function add(){
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
+    logEntries.push(enteredNumber);
+    console.log(logEntries);
 }
 
 function subt(){
