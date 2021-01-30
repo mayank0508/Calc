@@ -12,6 +12,16 @@ function operationResult(operator, startResult, endResult){
     outputResult(currrentResult, calcDescription);
 }
 
+function writeToLog(operatoion, prevResult, newNumber, newResult){
+    const LogEntry = {
+        operator: operatoion,
+        previousResult: previousResult,
+        number: newNumber,
+        result: newResult,
+    }
+    logEntries.push(LogEntry);
+    console.log(logEntries);
+}
 function add(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
@@ -19,14 +29,7 @@ function add(){
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
-    const LogEntry = {
-        operator: 'ADD',
-        previousResult: initialResult,
-        number: enteredNumber,
-        result: currrentResult,
-    }
-    logEntries.push(LogEntry);
-    console.log(logEntries);
+    writeToLog('ADD', initialResult, enteredNumber, currrentResult)
 }
 
 function subt(){
