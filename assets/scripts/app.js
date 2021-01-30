@@ -37,14 +37,9 @@ function subt(){
     const initialResult = currrentResult;
     currrentResult -= enteredNumber;
     operationResult('-', initialResult, enteredNumber);
-    const LogEntry = {
-        operator: 'SUBT',
-        previousResult: initialResult,
-        number: enteredNumber,
-        result: currrentResult,
-    }
     logEntries.push(LogEntry);
     console.log(logEntries);
+    writeToLog('SUBT', initialResult, enteredNumber, currrentResult);
 }
 
 
@@ -53,14 +48,9 @@ function multi(){
     const initialResult = currrentResult;
     currrentResult *= enteredNumber;
     operationResult('*', initialResult, enteredNumber);
-    const LogEntry = {
-        operator: 'MULTIPLY',
-        previousResult: initialResult,
-        number: enteredNumber,
-        result: currrentResult,
-    }
     logEntries.push(LogEntry);
     console.log(logEntries);
+    writeToLog('MULTIPLY', initialResult, enteredNumber, currrentResult);
 }
 
 
@@ -69,14 +59,9 @@ function divide(){
     const initialResult = currrentResult;
     currrentResult /= enteredNumber;
     operationResult('/', initialResult, enteredNumber);
-    const LogEntry = {
-        operator: 'DIVIDE',
-        previousResult: initialResult,
-        number: enteredNumber,
-        result: currrentResult,
-    }
     logEntries.push(LogEntry);
     console.log(logEntries);
+    writeToLog('DIVIDE', initialResult, enteredNumber, currrentResult);
 }
 
 
