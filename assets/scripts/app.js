@@ -21,9 +21,9 @@ function add(){
     operationResult('+', initialResult, enteredNumber);
     const LogEntry = {
         operator: 'ADD',
-        previousResult: 'initialResult',
-        number: 'enteredNumber',
-        result: 'currrentResult',
+        previousResult: initialResult,
+        number: enteredNumber,
+        result: currrentResult,
     }
     logEntries.push(LogEntry);
     console.log(logEntries);
