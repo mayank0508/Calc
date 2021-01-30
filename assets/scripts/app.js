@@ -43,7 +43,7 @@ function subt(){
     logEntries.push(LogEntry);
     console.log(logEntries);
 }
-}
+
 
 function multi(){
     const enteredNumber = getUserInput();
@@ -59,7 +59,7 @@ function multi(){
     logEntries.push(LogEntry);
     console.log(logEntries);
 }
-}
+
 
 function divide(){
     const enteredNumber = getUserInput();
@@ -75,7 +75,7 @@ function divide(){
     logEntries.push(LogEntry);
     console.log(logEntries);
 }
-}
+
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subt);
