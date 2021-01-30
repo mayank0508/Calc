@@ -15,7 +15,7 @@ function operationResult(operator, startResult, endResult){
 function writeToLog(operatoion, prevResult, newNumber, newResult){
     const LogEntry = {
         operator: operatoion,
-        previousResult: previousResult,
+        previousResult: prevResult,
         number: newNumber,
         result: newResult,
     }
@@ -29,7 +29,7 @@ function add(){
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
-    writeToLog('ADD', initialResult, enteredNumber, currrentResult)
+    writeToLog('ADD', initialResult, enteredNumber, currrentResult);
 }
 
 function subt(){
