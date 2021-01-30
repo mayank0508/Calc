@@ -19,7 +19,13 @@ function add(){
                  //currrentResult.toString                                            // something like this :-
                  // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
-    logEntries.push(enteredNumber);
+    const LogEntry = {
+        operator: 'ADD',
+        previousResult: 'initialResult',
+        number: 'enteredNumber',
+        result: 'currrentResult',
+    }
+    logEntries.push(LogEntry);
     console.log(logEntries);
 }
 
