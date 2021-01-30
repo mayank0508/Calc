@@ -34,6 +34,15 @@ function subt(){
     const initialResult = currrentResult;
     currrentResult -= enteredNumber;
     operationResult('-', initialResult, enteredNumber);
+    const LogEntry = {
+        operator: 'SUBT',
+        previousResult: initialResult,
+        number: enteredNumber,
+        result: currrentResult,
+    }
+    logEntries.push(LogEntry);
+    console.log(logEntries);
+}
 }
 
 function multi(){
@@ -41,6 +50,15 @@ function multi(){
     const initialResult = currrentResult;
     currrentResult *= enteredNumber;
     operationResult('*', initialResult, enteredNumber);
+    const LogEntry = {
+        operator: 'MULTIPLY',
+        previousResult: initialResult,
+        number: enteredNumber,
+        result: currrentResult,
+    }
+    logEntries.push(LogEntry);
+    console.log(logEntries);
+}
 }
 
 function divide(){
@@ -48,6 +66,15 @@ function divide(){
     const initialResult = currrentResult;
     currrentResult /= enteredNumber;
     operationResult('/', initialResult, enteredNumber);
+    const LogEntry = {
+        operator: 'DIVIDE',
+        previousResult: initialResult,
+        number: enteredNumber,
+        result: currrentResult,
+    }
+    logEntries.push(LogEntry);
+    console.log(logEntries);
+}
 }
 
 addBtn.addEventListener('click', add);
