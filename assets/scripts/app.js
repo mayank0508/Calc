@@ -71,5 +71,3 @@ subtractBtn.addEventListener('click', subt);
 multiplyBtn.addEventListener('click', multi);
 divideBtn.addEventListener('click', divide);
 
- 
-
