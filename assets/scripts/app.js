@@ -27,10 +27,11 @@ function add(){
     const initialResult = currrentResult;
     currrentResult += enteredNumber;//Here you can not use ParseInt, you can also do
                  //currrentResult.toString                                            // something like this :-
-                 // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
+                // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
     operationResult('+', initialResult, enteredNumber);
     writeToLog('ADD', initialResult, enteredNumber, currrentResult);
 }
+
 
 function subt(){
     const enteredNumber = getUserInput();
