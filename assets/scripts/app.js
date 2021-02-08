@@ -4,7 +4,7 @@ let logEntries = []; // We have not declared it as an array because dowm the lin
                      // But if we use push then we have reintialzed the array here.
 
 function getUserInput() {
-    return userInput.value;
+    return parseInt(userInput.value);
 }
 
 function operationResult(operator, startResult, endResult){
