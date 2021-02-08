@@ -25,6 +25,7 @@ function writeToLog(operatoion, prevResult, newNumber, newResult){
 function add(){
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
+    console.log('INPUT', enteredNumber, currrentResult)
     currrentResult += enteredNumber;//Here you can not use ParseInt, you can also do
                  //currrentResult.toString                                            // something like this :-
                 // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
