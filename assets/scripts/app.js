@@ -29,29 +29,26 @@ function calcResult(calcType) {
     let mathOperator;
     if (calcType === "ADD") {
         currrentResult += enteredNumber;
+        mathOperator = '+';
     } else if (calcType === "SUBT") {
         currrentResult -= enteredNumber;
+        mathOperator = '-';
     } else if (calcType === "MULT") {
         currrentResult *= enteredNumber;
+        mathOperator = '*';
     } else if (calcType === "DIVI") {
         currrentResult /= enteredNumber;
+        mathOperator = '/';
     }
-    currrentResult -= enteredNumber;
-    operationResult('-', initialResult, enteredNumber);
-    logEntries.push(LogEntry);
-    console.log(logEntries);
-    writeToLog('SUBT', initialResult, enteredNumber, currrentResult);
+    operationResult(calcResult, initialResult, enteredNumber);
+    writeToLog(mathOperator, initialResult, enteredNumber, currrentResult);
 }
 
 function add() {
-    const enteredNumber = getUserInput();
-    const initialResult = currrentResult;
-    currrentResult += enteredNumber; //Here you can not use ParseInt, you can also do
+    calcResult ('ADD');//Here you can not use ParseInt, you can also do
     //currrentResult.toString                                            // something like this :-
     // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
-    operationResult('+', initialResult, enteredNumber);
-    writeToLog('ADD', initialResult, enteredNumber, currrentResult);
-}
+    }
 
 
 function subt() {
