@@ -40,7 +40,7 @@ function calcResult(calcType) {
         currrentResult /= enteredNumber;
         mathOperator = '/';
     }
-    operationResult(calcResult, initialResult, enteredNumber);
+    operationResult(mathOperator, initialResult, enteredNumber);
     writeToLog(calcType, initialResult, enteredNumber, currrentResult);
 }
 
