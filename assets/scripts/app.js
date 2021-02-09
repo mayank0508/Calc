@@ -45,43 +45,24 @@ function calcResult(calcType) {
 }
 
 function add() {
-    calcResult ('ADD');//Here you can not use ParseInt, you can also do
+    calcResult('ADD'); //Here you can not use ParseInt, you can also do
     //currrentResult.toString                                            // something like this :-
     // this is used to convert a number to a string                     // currrentResult = currrentResult + +(userInput.value)
-    }
+}
 
 
 function subt() {
-    const enteredNumber = getUserInput();
-    const initialResult = currrentResult;
-    currrentResult -= enteredNumber;
-    operationResult('-', initialResult, enteredNumber);
-    logEntries.push(LogEntry);
-    console.log(logEntries);
-    writeToLog('SUBT', initialResult, enteredNumber, currrentResult);
+    calcResult('SUBT');
 }
 
 
 function multi() {
-    const enteredNumber = getUserInput();
-    const initialResult = currrentResult;
-    currrentResult *= enteredNumber;
-    operationResult('*', initialResult, enteredNumber);
-    logEntries.push(LogEntry);
-    console.log(logEntries);
-    writeToLog('MULTIPLY', initialResult, enteredNumber, currrentResult);
+    calcResult('MULT');
 }
 
 
 function divide() {
-    const enteredNumber = getUserInput();
-    const initialResult = currrentResult;
-    currrentResult /= enteredNumber;
-    operationResult('/', initialResult, enteredNumber);
-    logEntries.push(LogEntry);
-    console.log(logEntries);
-    writeToLog('DIVIDE', initialResult, enteredNumber, currrentResult);
-}
+    calcResult('DIVI');}
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subt);
