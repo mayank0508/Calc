@@ -24,6 +24,9 @@ function writeToLog(operatoion, prevResult, newNumber, newResult) {
 }
 
 function calcResult(calcType) {
+    if (calcType !== 'ADD' && calcType !== 'SUBT' && calcType !== 'MULT' && calcType !== 'DIVI') {
+        return;
+        }
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
     let mathOperator;
@@ -44,6 +47,7 @@ function calcResult(calcType) {
     writeToLog(calcType, initialResult, enteredNumber, currrentResult);
 }
 
+
 function add() {
     calcResult('ADD'); //Here you can not use ParseInt, you can also do
     //currrentResult.toString                                            // something like this :-
@@ -62,7 +66,8 @@ function multi() {
 
 
 function divide() {
-    calcResult('DIVI');}
+    calcResult('DIVI');
+}
 
 addBtn.addEventListener('click', add);
 subtractBtn.addEventListener('click', subt);
