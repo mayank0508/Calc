@@ -31,11 +31,12 @@ function calcResult(calcType) {
         return;
         }
 
-    if (calcType === 'ADD' && 
+  /*  if (calcType === 'ADD' && 
         calcType === 'SUBT' && 
         calcType === 'MULT' && 
         calcType === 'DIVI') {
-        
+    */
+       
     const enteredNumber = getUserInput();
     const initialResult = currrentResult;
     let mathOperator;
