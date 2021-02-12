@@ -24,10 +24,13 @@ function writeToLog(operatoion, prevResult, newNumber, newResult) {
 }
 
 function calcResult(calcType) {
+    const enteredNumber = getUserInput();
     if (calcType !== 'ADD' && 
         calcType !== 'SUBT' && 
         calcType !== 'MULT' && 
-        calcType !== 'DIVI') {
+        calcType !== 'DIVI' ||
+        !enteredNumber
+        ) {
         return;
         }
 
@@ -37,7 +40,7 @@ function calcResult(calcType) {
         calcType === 'DIVI') {
     */
        
-    const enteredNumber = getUserInput();
+
     const initialResult = currrentResult;
     let mathOperator;
     if (calcType === "ADD") {
