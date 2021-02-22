@@ -12,5 +12,5 @@
 
 ## Autor
 
-ex. Mayank Kumar
-ex. [@MayankThakurrr](https://twitter.com/MayankThakurrr)
+- Mayank Kumar
+- [@MayankThakurrr](https://twitter.com/MayankThakurrr)
